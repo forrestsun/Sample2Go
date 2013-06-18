@@ -6,6 +6,7 @@ import (
 
 func TestOps(t *testing.T) {
 	tm := NewTaskManager()
+
 	if tm == nil {
 		t.Error("new taskmanager failed.")
 	}

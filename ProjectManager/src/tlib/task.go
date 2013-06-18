@@ -32,7 +32,7 @@ func (t *TaskManager) FindByTodoId(todoid string) *TodoEntry {
 		return nil
 	}
 	for _, v := range t.TodoList {
-		if v.todo_id == todoid {
+		if v.Todo_Id == todoid {
 			return &v
 		}
 	}
@@ -55,7 +55,7 @@ func (t *TaskManager) RemoveByTodoID(todoid string) *TodoEntry {
 	}
 
 	for i, v := range t.TodoList {
-		if v.todo_id == todoid {
+		if v.Todo_Id == todoid {
 			return t.Remove(i)
 		}
 	}
